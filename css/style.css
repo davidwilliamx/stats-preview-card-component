@@ -78,30 +78,22 @@ body {
     color: var(--transparent-white-main);
     text-transform: uppercase;
 }
-.container picture {
+.container .image {
     position: relative;
-    filter: contrast(160%);
+    background-color: var(--soft-violet);
     border-top-right-radius: 0.6666666666666666rem;
     border-bottom-right-radius: 0.6666666666666666rem;
 }
-.container .image-mobile {
+.container .image .image-mobile {
     display: none;
 }
-.container picture img {
+.container .image img {
     display: block;
     border-top-right-radius: 0.6666666666666666rem;
     border-bottom-right-radius: 0.6666666666666666rem;
+    mix-blend-mode: multiply;
+    opacity: .8;
 }
-.container picture .overlay {
-    width: 100%;
-    height: 100%;
-    opacity: .7;
-    background-color: var(--soft-violet);
-    position: absolute;
-    border-top-right-radius: 0.6666666666666666rem;
-    border-bottom-right-radius: 0.6666666666666666rem;
-}
-
 /* @media (max-width: 375px) { */
 @media (max-width: 25rem) {
     .container {
@@ -130,15 +122,15 @@ body {
         margin-top: 1.9rem;
         margin-bottom: 1.9rem;
     }
-    .container .image-desktop {
+    .container .image .image-desktop {
         display: none;
     }
-    .container picture .overlay {
+    .container .image .overlay {
         border-top-left-radius: 0.6666666666666666rem;
         border-top-right-radius: 0.6666666666666666rem;
         border-bottom-right-radius: 0;
     }
-    .container .image-mobile {
+    .container .image .image-mobile {
         display: block;
         border-top-left-radius: 0.6666666666666666rem;
         border-top-right-radius: 0.6666666666666666rem;
@@ -176,15 +168,15 @@ body {
         margin-top: 1.9rem;
         margin-bottom: 1.9rem;
     }
-    .container .image-desktop {
+    .container .image .image-desktop {
         display: none;
     }
-    .container picture .overlay {
+    .container .image .overlay {
         border-top-left-radius: 0.6666666666666666rem;
         border-top-right-radius: 0.6666666666666666rem;
         border-bottom-right-radius: 0;
     }
-    .container .image-mobile {
+    .container .image .image-mobile {
         display: block;
         border-top-left-radius: 0.6666666666666666rem;
         border-top-right-radius: 0.6666666666666666rem;
@@ -215,15 +207,15 @@ body {
         margin-right: 0;
         margin-bottom: 1.9rem;
     }
-    .container .image-desktop {
+    .container .image .image-desktop {
         display: none;
     }
-    .container picture .overlay {
+    .container .image .overlay {
         border-top-left-radius: 0.6666666666666666rem;
         border-top-right-radius: 0.6666666666666666rem;
         border-bottom-right-radius: 0;
     }
-    .container .image-mobile {
+    .container .image .image-mobile {
         display: block;
         border-top-left-radius: 0.6666666666666666rem;
         border-top-right-radius: 0.6666666666666666rem;
@@ -254,15 +246,15 @@ body {
         margin-right: 0;
         margin-bottom: 1.9rem;
     }
-    .container .image-desktop {
+    .container .image .image-desktop {
         display: none;
     }
-    .container picture .overlay {
+    .container .image .overlay {
         border-top-left-radius: 0.6666666666666666rem;
         border-top-right-radius: 0.6666666666666666rem;
         border-bottom-right-radius: 0;
     }
-    .container .image-mobile {
+    .container .image .image-mobile {
         display: block;
         border-top-left-radius: 0.6666666666666666rem;
         border-top-right-radius: 0.6666666666666666rem;
